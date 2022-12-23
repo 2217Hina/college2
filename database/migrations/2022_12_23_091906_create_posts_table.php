@@ -6,26 +6,16 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
- migration
-
     /**
      * Run the migrations.
      *
      * @return void
      */
- master
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
- migration
-            $table->string('title', 50);
-            $table->string('body', 200);
             $table->timestamps();
-            $table->softDeletes();
-=======
-            $table->timestamps();
- master
         });
     }
 
